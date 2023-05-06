@@ -21,5 +21,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('pwa.urls')),
     path('', include('accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header = "  REVOX Admin"
+admin.site.site_title = "REVOX Admin Portal"
+admin.site.index_title = "BIENVENUE SUR REVOX\\\\\\\\\\\ PORTAIL"
