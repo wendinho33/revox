@@ -28,9 +28,9 @@ class Contact_us(SuccessMessageMixin,CreateView):
     success_url = '/'
 
 
-class Payments(SuccessMessageMixin,CreateView):
+class PaymentsView(SuccessMessageMixin,CreateView):
     template_name = 'onirix/payments.html'
-    model = Payments()
+    model = Payments
     fields = ['name', 'email', 'price']
     success_message = "We will contact you for the Payment, Thank You for your Interest!!!"
     success_url = '/'
