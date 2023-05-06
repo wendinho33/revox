@@ -1,7 +1,7 @@
 archinstall==2.5.6
 asgiref==3.6.0
 attrs==22.2.0
-Brlapi==0.8.4
+Brlapi==0.7.0
 btrfsutil==6.3
 cffi==1.15.1
 chardet==5.1.0
