@@ -1,1 +1,1 @@
-web: gunicorn 'revox.wsgi'
+web: python manage.py migrate && python manage.py collectstatic && gunicorn revox.wsgi
