@@ -146,7 +146,7 @@ PWA_APP_START_URL = '/'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-        'src': '/static/img/logo/futmax.png',
+        'src': '/static/img/logo.png',
         'sizes': '200x200'
     }
 ]
