@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Register 🫠{% endblock title %}
+{% block main %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-12 col-xl-10">
+            <div class="card shadow-lg o-hidden border-0 my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-flex">
+                            <div class="flex-grow-1 bg-login-image" style="background-image: url(&quot;/static/img/revix.jpeg&quot;);"></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h4 class="text-dark mb-4">Revox</h4>
+                                </div>
+                                <form class="user" method='post'>
+                                    <div class="mb-3">{% include 'form.html' %}</div>
+                                    <button class="btn btn-primary d-block btn-user w-100" type="submit">Register</button>
+                                    <hr>
+                                </form>
+                                <div class="text-center"><a class="small" href="{% url 'login' %}">Sign In</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    
+    .textinput,.passwordinput,.emailinput{
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: 1rem;
+}
+
+#hint_id_password1,#hint_id_username {
+    display: None;
+}
+</style>
+{% endblock main %}

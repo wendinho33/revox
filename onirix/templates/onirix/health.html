@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Onirix and health{% endblock title %}
+{% block main %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% include 'header.html' %}
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row mb-4 mb-lg-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <p class="fw-bold text-success mb-2">Onirix And Health</p>
+                <h3 class="fw-bold">Don't depend only on Onirix, be free like Onirix</h3>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5"><img class="rounded img-fluid shadow" src="/static/img/products/1.jpg"></div>
+            <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div>
+                    <h5 class="fw-bold">If using Onirix symptoms does'not get better&nbsp;</h5>
+                    <p class="text-muted mb-4"> please contact Healthcare professionals to seek advice</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col order-md-last mb-5"><img class="rounded img-fluid shadow" src="/static/img/products/2.jpg"></div>
+            <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div>
+                    <h5 class="fw-bold">Onirix boost mental and emotional health&nbsp;</h5>
+                    <p class="text-muted mb-4">Emotional health is important for well being of clients, so onirix care about people</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5"><img class="rounded img-fluid shadow" src="/static/img/products/3.jpg"></div>
+            <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div>
+                    <h5 class="fw-bold">Onirix is heret&nbsp;</h5>
+                    <p class="text-muted mb-4">Onirix brings peace of mind and people has better sleep as they can now easily interprete their dreams</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock main %}

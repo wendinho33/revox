@@ -34,3 +34,8 @@ class PaymentsView(SuccessMessageMixin,CreateView):
     fields = ['name', 'email', 'price']
     success_message = "We will contact you for the Payment, Thank You for your Interest!!!"
     success_url = '/'
+
+
+def health_view(request):
+    template_name = 'onirix/health.html'
+    return render(request, template_name)

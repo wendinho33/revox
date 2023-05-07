@@ -19,8 +19,8 @@ class Newsletter(models.Model):
 
 class Payments(models.Model):
     PRICE_LIST = [
+        ('$25','$25'),
         ('$38','$38'),
-        ('$50','$50'),
     ]
     name = models.CharField(max_length=255)
     email = models.EmailField()
